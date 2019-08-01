@@ -18,9 +18,9 @@ const TabNavigator = createBottomTabNavigator(
     {
         首页: HomeNavigator,
         购物车: ShopcarScreen,
+        资讯: ShopcarScreen,
         //Settings: UserScreen,
         个人中心: UserScreen,
-
     },
     {
         tabBarOptions: {
@@ -40,6 +40,8 @@ const TabNavigator = createBottomTabNavigator(
                 } else if (routeName === '个人中心') {
                     iconName = `ios-options`;
                 } else if (routeName === '购物车') {
+                    iconName = `ios-cart`;
+                } else if (routeName === '资讯') {
                     iconName = `ios-cart`;
                 }
 
