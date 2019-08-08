@@ -11,6 +11,7 @@ import {createBottomTabNavigator, createAppContainer, createStackNavigator} from
 import Icon from 'react-native-vector-icons/Ionicons';
 import UserScreen from './src/page/UserScreen';
 import ShopcarScreen from './src/page/ShopcarScreen';
+import NewsScreen from './src/page/NewsScreen';
 import HomeNavigator from './src/page/HomeNavigator';
 
 
@@ -18,7 +19,7 @@ const TabNavigator = createBottomTabNavigator(
     {
         首页: HomeNavigator,
         购物车: ShopcarScreen,
-        资讯: ShopcarScreen,
+        资讯: NewsScreen,
         //Settings: UserScreen,
         个人中心: UserScreen,
     },
